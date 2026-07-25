@@ -1,5 +1,4 @@
-class Solution(object):
-    def findMin(self, nums):
+def findMin(nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -23,3 +22,5 @@ class Solution(object):
                 high = mid-1
 
         return minimum
+
+print(findMin([4,5,1,2,3]))
