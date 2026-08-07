@@ -1,5 +1,4 @@
-class Solution(object):
-    def largestRectangleArea(self, heights):
+def largestRectangleArea(heights):
         """
         :type heights: List[int]
         :rtype: int
@@ -24,3 +23,6 @@ class Solution(object):
             stack.append(i)
 
         return maxArea
+
+
+print(largestRectangleArea([2,1,5,6,2,3,1,1,2,1,1,1,2,1,1]))

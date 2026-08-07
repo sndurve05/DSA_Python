@@ -1,4 +1,4 @@
-class Solution(object):
+'''class Solution(object):
     def nextGreaterElement(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -24,4 +24,18 @@ class Solution(object):
         for num in nums1:
             ans.append(dict[num])
 
-        return ans
+        return ans'''
+  
+def nextGreaterElement(nums):
+    n = len(nums)
+    stack =[]
+    ans = [-1]* len(nums)
+    for i in range(n-1,-1,-1):
+        while stack and nums[i]>=nums[stack[-1]]:
+            stack.pop()
+        if stack:
+            ans [i]= nums[stack[-1]]
+
+        stack.append(i)
+
+    return ans
