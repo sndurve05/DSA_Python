@@ -1,5 +1,3 @@
-# Definition for singly-linked list.
-
 # This is a straight forward approach of counting all the nodes 
 # and then traversing till the middle node.
 #however it takes extra space and an additional traversal.
